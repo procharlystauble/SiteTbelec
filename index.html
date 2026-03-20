@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TBelec - Électricien Expert à Montigny-lès-Cormeilles (95370)</title>
+    <meta name="description" content="TBelec, votre artisan électricien de confiance à Montigny-lès-Cormeilles. Dépannage 24h/24, installation, mise aux normes, domotique et éclairage. Devis gratuit.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            900: '#0c4a6e',
+                        },
+                        accent: {
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(to bottom, rgba(12, 74, 110, 0.8), rgba(12, 74, 110, 0.95)), url('https://loremflickr.com/1920/1080/electrician?random=1');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Header Sticky -->
+    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center text-white shadow-lg">
+                        <i class="fa-solid fa-bolt text-xl"></i>
+                    </div>
+                    <span class="font-heading font-bold text-2xl text-gray-900 tracking-tight">TBelec</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Nos Services</a>
+                    <a href="#pourquoi-nous" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Pourquoi TBelec</a>
+                    <a href="#avis" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Avis Clients</a>
+                </div>
+                <div class="flex items-center">
+                    <a href="tel:0652753683" class="inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-full shadow-lg text-base font-semibold text-white bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-700 hover:to-brand-600 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500 animate-pulse-slow">
+                        <i class="fa-solid fa-phone mr-2"></i> 06 52 75 36 83
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg relative pt-32 pb-20 lg:pt-48 lg:pb-32 flex items-center min-h-[90vh]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm text-brand-100 mb-8">
+                <span class="flex h-2 w-2 rounded-full bg-green-400 animate-ping absolute"></span>
+                <span class="flex h-2 w-2 rounded-full bg-green-500 relative"></span>
+                <span class="text-sm font-medium tracking-wide uppercase">Artisan disponible 24h/24 & 7j/7</span>
+            </div>
+            
+            <h1 class="text-4xl tracking-tight font-heading font-extrabold text-white sm:text-5xl md:text-6xl lg:text-7xl mb-6 drop-shadow-lg">
+                Votre Électricien de Confiance à <br class="hidden lg:block"/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-100 to-brand-500">Montigny-lès-Cormeilles</span>
+            </h1>
+            
+            <p class="mt-4 max-w-2xl text-lg sm:text-xl text-gray-200 mx-auto font-light leading-relaxed mb-10">
+                Panne de courant ? Mise aux normes ? Projet domotique ? Thomas de <strong>TBelec</strong> intervient rapidement. Un travail soigné, des câbles invisibles et des délais toujours respectés.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="tel:0652753683" class="inline-flex items-center justify-center px-8 py-4 border border-transparent rounded-xl shadow-2xl text-lg font-bold text-white bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-500 hover:scale-105 transition-all duration-300">
+                    <i class="fa-solid fa-bolt mr-2"></i> Intervention d'Urgence
+                </a>
+                <a href="#services" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 rounded-xl text-lg font-bold text-white bg-white/10 hover:bg-white/20 backdrop-blur-sm hover:scale-105 transition-all duration-300">
+                    Découvrir nos services
+                </a>
+            </div>
+
+            <!-- Trust badges -->
+            <div class="mt-12 pt-8 border-t border-white/10 flex flex-wrap justify-center gap-8 text-white/80 text-sm font-medium">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-star text-accent-500"></i> Note Google : 4.9/5 (28 avis)
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-brand-500"></i> Val-d'Oise (95)
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-check-circle text-green-500"></i> Devis Gratuit
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAS Copywriting Intro -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-heading font-bold text-gray-900 mb-6">L'électricité ne s'improvise pas. Ne prenez aucun risque avec votre sécurité.</h2>
+            <p class="text-lg text-gray-600 mb-4 leading-relaxed">
+                Une installation vieillissante, des coupures à répétition ou des câbles inesthétiques qui pendent au milieu de votre salon ? Les problèmes électriques sont non seulement stressants, mais ils peuvent aussi s'avérer dangereux pour votre habitation.
+            </p>
+            <p class="text-lg text-gray-600 leading-relaxed font-medium">
+                La solution ? Faire appel à un véritable professionnel. <strong>TBelec</strong> vous garantit une intervention rapide, sécurisée et sur-mesure. Que ce soit pour installer des spots dans votre cuisine, accrocher votre TV avec des câbles invisibles ou piloter vos radiateurs depuis votre smartphone, nous rendons votre maison plus sûre et plus moderne.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-600 font-bold tracking-wider uppercase text-sm">Expertise TBelec</span>
+                <h2 class="mt-2 text-3xl font-heading font-extrabold text-gray-900 sm:text-4xl">Nos Services Électriques</h2>
+                <div class="mt-4 w-24 h-1 bg-gradient-to-r from-brand-500 to-accent-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden group border border-gray-100">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://loremflickr.com/800/600/electrician?random=2" alt="Dépannage et Tableaux électriques" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <i class="fa-solid fa-plug absolute bottom-4 right-4 text-3xl text-white opacity-80"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-heading font-bold text-gray-900 mb-3">Dépannage & Mise aux normes</h3>
+                        <p class="text-gray-600 mb-6 line-clamp-3">Intervention rapide pour toute panne de courant. Remplacement et raccordement complet de tableaux électriques selon les normes NF C 15-100 en vigueur pour votre sécurité absolue.</p>
+                        <a href="tel:0652753683" class="text-brand-600 font-semibold hover:text-brand-800 flex items-center gap-2 group-hover:gap-3 transition-all">
+                            Demander un devis <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden group border border-gray-100">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://loremflickr.com/800/600/lighting?random=3" alt="Éclairage intérieur et extérieur" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <i class="fa-solid fa-lightbulb absolute bottom-4 right-4 text-3xl text-white opacity-80"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-heading font-bold text-gray-900 mb-3">Éclairage & Esthétique</h3>
+                        <p class="text-gray-600 mb-6 line-clamp-3">Pose de spots encastrés, installation de luminaires extérieurs sur façade. Spécialiste de l'intégration esthétique : pose de TV murale avec câblage totalement invisible.</p>
+                        <a href="tel:0652753683" class="text-brand-600 font-semibold hover:text-brand-800 flex items-center gap-2 group-hover:gap-3 transition-all">
+                            Demander un devis <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden group border border-gray-100">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://loremflickr.com/800/600/smarthome?random=4" alt="Domotique et motorisation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <i class="fa-solid fa-house-signal absolute bottom-4 right-4 text-3xl text-white opacity-80"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-heading font-bold text-gray-900 mb-3">Domotique & Motorisation</h3>
+                        <p class="text-gray-600 mb-6 line-clamp-3">Installation de systèmes intelligents pour piloter vos radiateurs depuis votre smartphone. Raccordement de portails électriques. Rendez votre maison connectée et économe.</p>
+                        <a href="tel:0652753683" class="text-brand-600 font-semibold hover:text-brand-800 flex items-center gap-2 group-hover:gap-3 transition-all">
+                            Demander un devis <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="pourquoi-nous" class="py-20 bg-brand-900 text-white relative overflow-hidden">
+        <!-- Decorative background elements -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
+            <div class="absolute -top-24 -left-24 w-96 h-96 rounded-full border-[20px] border-white"></div>
+            <div class="absolute top-1/2 right-[-10%] w-[40rem] h-[40rem] rounded-full border-[40px] border-brand-500"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-heading font-extrabold sm:text-4xl text-white mb-4">Pourquoi choisir TBelec ?</h2>
+                <p class="text-brand-100 max-w-2xl mx-auto text-lg">Parce que votre satisfaction et la sécurité de votre installation sont nos priorités absolues.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center hover:bg-white/10 transition-colors">
+                    <div class="w-16 h-16 mx-auto bg-brand-500 rounded-full flex items-center justify-center mb-6 shadow-lg shadow-brand-500/30">
+                        <i class="fa-solid fa-broom text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 font-heading">Travail Très Propre</h3>
+                    <p class="text-brand-100 text-sm">Chantier laissé impeccable, sans traces, avec des finitions esthétiques (câbles cachés, thermostats déplacés).</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center hover:bg-white/10 transition-colors">
+                    <div class="w-16 h-16 mx-auto bg-brand-500 rounded-full flex items-center justify-center mb-6 shadow-lg shadow-brand-500/30">
+                        <i class="fa-solid fa-clock text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 font-heading">Disponibilité 24/7</h3>
+                    <p class="text-brand-100 text-sm">Une urgence en pleine nuit ou un dimanche ? Nous sommes ouverts 24h/24 pour intervenir à Montigny-lès-Cormeilles.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center hover:bg-white/10 transition-colors">
+                    <div class="w-16 h-16 mx-auto bg-brand-500 rounded-full flex items-center justify-center mb-6 shadow-lg shadow-brand-500/30">
+                        <i class="fa-solid fa-stopwatch text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 font-heading">Délais Tenus</h3>
+                    <p class="text-brand-100 text-sm">Nous respectons scrupuleusement nos engagements calendaires. Ponctualité et fiabilité garanties.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center hover:bg-white/10 transition-colors">
+                    <div class="w-16 h-16 mx-auto bg-brand-500 rounded-full flex items-center justify-center mb-6 shadow-lg shadow-brand-500/30">
+                        <i class="fa-solid fa-handshake text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 font-heading">Conseils & Solutions</h3>
+                    <p class="text-brand-100 text-sm">Nous cherchons toujours à satisfaire le client en trouvant les solutions les plus adaptées et économiques.</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <a href="tel:0652753683" class="inline-flex items-center justify-center px-8 py-4 border border-transparent rounded-xl shadow-2xl text-lg font-bold text-brand-900 bg-white hover:bg-gray-50 hover:scale-105 transition-all duration-300">
+                    <i class="fa-solid fa-phone-volume mr-3 text-brand-600"></i> Discuter de votre projet
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="avis" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="flex justify-center items-center gap-2 mb-2">
+                    <i class="fa-solid fa-star text-accent-500 text-2xl"></i>
+                    <i class="fa-solid fa-star text-accent-500 text-2xl"></i>
+                    <i class="fa-solid fa-star text-accent-500 text-2xl"></i>
+                    <i class="fa-solid fa-star text-accent-500 text-2xl"></i>
+                    <i class="fa-solid fa-star text-accent-500 text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-heading font-extrabold text-gray-900 sm:text-4xl mb-4">Ils nous recommandent à 100%</h2>
+                <p class="text-lg text-gray-600">Découvrez les avis de nos clients (Note : 4.9/5 basée sur 28 avis réels sur Google Maps)</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 relative">
+                    <i class="fa-solid fa-quote-right absolute top-6 right-6 text-4xl text-gray-100"></i>
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://lh3.googleusercontent.com/a/ACg8ocIW-AmU5SHK_cDQTdrOXymz6jplJltc1mMrkwL6Wbn4Eg81EQ=s128-c0x00000000-cc-rp-mo" alt="Ced" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-gray-900 font-heading">Ced</h4>
+                            <div class="flex text-accent-500 text-sm">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic leading-relaxed">"Thomas fournit un excellent travail, délai largement tenu, très pro cherche toujours à satisfaire les clients et trouver des solutions. Laisse le chantier propre. Recommandé à 100%"</p>
+                    <span class="text-xs text-gray-400 mt-4 block">il y a 6 mois</span>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 relative">
+                    <i class="fa-solid fa-quote-right absolute top-6 right-6 text-4xl text-gray-100"></i>
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://lh3.googleusercontent.com/a/ACg8ocIoF6hqKsSJMZpgr-PlqWRwaSrgNR-wQTaMKDTTQEvvg3Igig=s128-c0x00000000-cc-rp-mo-ba3" alt="Sofrak" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-gray-900 font-heading">Sofrak</h4>
+                            <div class="flex text-accent-500 text-sm">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic leading-relaxed">"Nous avons fait appel à Thomas pour le remplacement d'une lampe extérieure sur une façade. C'est un artisan ponctuel, très professionnel [...] Nous recommandons à 100% ses services."</p>
+                    <span class="text-xs text-gray-400 mt-4 block">il y a 11 mois</span>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 relative">
+                    <i class="fa-solid fa-quote-right absolute top-6 right-6 text-4xl text-gray-100"></i>
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://lh3.googleusercontent.com/a/ACg8ocJ_fYMlyALF7mb0rv6N9zAHTb_xCwP8Zplu1Hv4dBvHNYqhxNc=s128-c0x00000000-cc-rp-mo-ba2" alt="Thomas Ciannarella" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-gray-900 font-heading">Thomas Ciannarella</h4>
+                            <div class="flex text-accent-500 text-sm">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic leading-relaxed">"Je recommande vivement, grâce à Thomas notre TV est désormais accrochée au mur, les câbles sont invisibles, et le thermostat gênant au milieu du mur a été déplacé proprement, sans traces…"</p>
+                    <span class="text-xs text-gray-400 mt-4 block">il y a 10 mois</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
+                
+                <!-- Brand & Description -->
+                <div class="md:col-span-5">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center text-white">
+                            <i class="fa-solid fa-bolt text-xl"></i>
+                        </div>
+                        <span class="font-heading font-bold text-2xl text-white tracking-tight">TBelec</span>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-sm">
+                        Votre artisan électricien de confiance. Dépannage, installation, domotique et mise aux normes électriques à Montigny-lès-Cormeilles et dans tout le Val-d'Oise.
+                    </p>
+                    <a href="tel:0652753683" class="inline-flex items-center justify-center px-6 py-3 rounded-lg text-white bg-brand-600 hover:bg-brand-500 transition-colors font-medium">
+                        <i class="fa-solid fa-phone mr-2"></i> 06 52 75 36 83
+                    </a>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="md:col-span-4">
+                    <h4 class="text-white font-heading font-bold text-lg mb-6">Contact & Accès</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-brand-500"></i>
+                            <span>21 Rue des Duchesnes<br>95370 Montigny-lès-Cormeilles<br>France</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-brand-500"></i>
+                            <span>06 52 75 36 83</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Hours -->
+                <div class="md:col-span-3">
+                    <h4 class="text-white font-heading font-bold text-lg mb-6">Horaires d'ouverture</h4>
+                    <div class="bg-gray-800 rounded-xl p-5 border border-gray-700">
+                        <ul class="space-y-2 text-sm">
+                            <li class="flex justify-between items-center text-white font-medium border-b border-gray-700 pb-2">
+                                <span>Lundi - Dimanche</span>
+                                <span class="text-green-400 flex items-center gap-1"><i class="fa-solid fa-circle text-[8px]"></i> Ouvert 24h/24</span>
+                            </li>
+                            <li class="pt-2 text-gray-400 italic text-center">
+                                Disponible 7 jours sur 7 pour les urgences.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-gray-500">
+                    &copy; <script>document.write(new Date().getFullYear())</script> TBelec - Artisan Électricien. Tous droits réservés.
+                </p>
+                <div class="flex items-center gap-2 text-sm text-gray-500">
+                    <i class="fa-solid fa-shield-halved text-brand-600"></i> Entreprise locale certifiée
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
